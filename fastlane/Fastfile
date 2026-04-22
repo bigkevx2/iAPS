@@ -102,12 +102,12 @@ platform :ios do
       targets: ["FreeAPS"]
     )
 
-    update_code_signing_settings(
-      path: "#{GITHUB_WORKSPACE}/FreeAPS.xcodeproj",
-      profile_name: mapping["#{APP_IDENTIFIER}.watchkitapp.watchkitextension"],
-      code_sign_identity: "iPhone Distribution",
-      targets: ["FreeAPSWatch WatchKit Extension"]
-    )
+    #update_code_signing_settings(
+    #  path: "#{GITHUB_WORKSPACE}/FreeAPS.xcodeproj",
+     # profile_name: mapping["#{APP_IDENTIFIER}.watchkitapp.watchkitextension"],
+    #  code_sign_identity: "iPhone Distribution",
+     # targets: ["FreeAPSWatch WatchKit Extension"]
+    #)
     
     update_code_signing_settings(
       path: "#{GITHUB_WORKSPACE}/FreeAPS.xcodeproj",
